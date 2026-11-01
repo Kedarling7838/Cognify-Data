@@ -1,0 +1,228 @@
+
+/* =========================================
+   COGNIFY DATA — GLOBAL STYLES
+   BLACK & MAROON COLOR SYSTEM
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  color: #f7f0f1;
+  background: #0b090a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --cognify-black: #0b090a;
+  --cognify-maroon: #701f2c;
+  --cognify-rose: #d66a7c;
+  --cognify-text: #f7f0f1;
+  --cognify-muted: #8c7c80;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--cognify-black);
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  background: var(--cognify-black);
+  color: var(--cognify-text);
+
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+a {
+  color: var(--cognify-rose);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+a:hover {
+  color: #f09ba8;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+::selection {
+  color: #fff;
+  background: #702b39;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cognify-rose);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #61303a #100d0e;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100d0e;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #100d0e;
+  border-radius: 10px;
+  background: #61303a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a3b4b;
+}
+
+/* Form controls */
+
+input,
+textarea,
+select {
+  color: var(--cognify-text);
+  background: #100d0e;
+  border-color: #493038;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8c7c80;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--cognify-rose);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(214, 106, 124, 0.13);
+}
+
+/* Bootstrap compatibility */
+
+.btn-primary {
+  --bs-btn-bg: #701f2c;
+  --bs-btn-border-color: #8c3040;
+  --bs-btn-hover-bg: #8a2b3b;
+  --bs-btn-hover-border-color: #a44354;
+  --bs-btn-active-bg: #48131d;
+  --bs-btn-active-border-color: #701f2c;
+  --bs-btn-disabled-bg: #701f2c;
+  --bs-btn-disabled-border-color: #701f2c;
+}
+
+.form-control,
+.form-select {
+  color: var(--cognify-text);
+  background-color: #100d0e;
+  border-color: #493038;
+}
+
+.form-control::placeholder {
+  color: #8c7c80;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: var(--cognify-text);
+  background-color: #151112;
+  border-color: var(--cognify-rose);
+  box-shadow: 0 0 0 3px rgba(214, 106, 124, 0.13);
+}
+
+.dropdown-menu {
+  --bs-dropdown-bg: #171213;
+  --bs-dropdown-color: #f7f0f1;
+  --bs-dropdown-border-color: #493038;
+  --bs-dropdown-link-color: #c1b2b5;
+  --bs-dropdown-link-hover-bg: #321b20;
+  --bs-dropdown-link-hover-color: #fff;
+}
+
+.table {
+  --bs-table-color: #f7f0f1;
+  --bs-table-bg: #171213;
+  --bs-table-border-color: #332326;
+  --bs-table-striped-bg: #211719;
+  --bs-table-striped-color: #f7f0f1;
+  --bs-table-hover-bg: #2a1a1e;
+  --bs-table-hover-color: #fff;
+}
+
+.modal-content {
+  color: #f7f0f1;
+  background: #171213;
+  border-color: #493038;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

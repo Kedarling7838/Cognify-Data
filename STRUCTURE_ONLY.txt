@@ -1,0 +1,1 @@
+Folder structure only. Placeholder files are empty. No application implementation code is included.

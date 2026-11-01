@@ -1,0 +1,11 @@
+.air-export-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:18px}
+.air-export-card{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-height:175px;padding:18px;border:1px solid #343044;border-radius:14px;background:linear-gradient(145deg,#211824,#151722);color:#f6edf1;text-align:left;cursor:pointer;transition:.2s}
+.air-export-card:hover{border-color:#a64e72;transform:translateY(-2px)}
+.air-export-card:disabled{opacity:.55;cursor:wait;transform:none}
+.air-export-card svg{color:#df91ad}
+.air-export-card b{font-size:15px}
+.air-export-card span{font-size:12px;color:#b8aeb5;line-height:1.45}
+.air-export-card strong{margin-top:auto;color:#f0a9c2;font-size:12px}
+.air-export-status{display:flex;align-items:center;gap:8px;color:#e6a9bf;font-size:13px;margin:14px 0 0}
+@media(max-width:1000px){.air-export-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.air-export-grid{grid-template-columns:1fr}}
